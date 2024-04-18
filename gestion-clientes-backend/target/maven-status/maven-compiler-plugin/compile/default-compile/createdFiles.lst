@@ -1,5 +1,7 @@
 com\gestionclientes\repository\ClienteRepository.class
 com\gestionclientes\exceptions\ResourceNotFoundException.class
-com\gestionclientes\entities\Cliente.class
+com\gestionclientes\GestionClientesBackendApplication$Myconfiguration.class
 com\gestionclientes\GestionClientesBackendApplication.class
+com\gestionclientes\entities\Cliente.class
+com\gestionclientes\GestionClientesBackendApplication$Myconfiguration$1.class
 com\gestionclientes\controller\ClienteController.class
