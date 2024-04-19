@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const CLIENTE_BASE_REST_API_URL="https://clientes-gestion.onrender.com/api/v1";
+const CLIENTE_BASE_REST_API_URL = VITE_API_URL;
 
 class ClienteService{
 
