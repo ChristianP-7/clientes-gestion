@@ -1,6 +1,7 @@
 import axios from "axios";
+import viteConfig from "../../vite.config";
 
-const CLIENTE_BASE_REST_API_URL = VITE_API_URL;
+const CLIENTE_BASE_REST_API_URL = import.meta.env.VITE_API_URL;
 
 class ClienteService{
 
