@@ -1,27 +1,27 @@
 import axios from "axios";
 
-const CLIENTE_BASE_REST_API_URL = "https://clientes-gestion.onrender.com/api/v1/clientes";
+const CLIENTE_BASE_REST_API_URL = "https://clientes-gestion.onrender.com/api/v1";
 
-class ClienteService{
+class ClienteService {
 
-    getAllClientes(){
-        return axios.get(CLIENTE_BASE_REST_API_URL);
+    getAllClientes() {
+        return axios.get(CLIENTE_BASE_REST_API_URL + "/clientes");
     }
 
-    createCliente(cliente){
-        return axios.post(CLIENTE_BASE_REST_API_URL, cliente);
+    createCliente(cliente) {
+        return axios.post(CLIENTE_BASE_REST_API_URL + "/clientes", cliente);
     }
 
-    getClienteById(clienteId){
-        return axios.get(CLIENTE_BASE_REST_API_URL + '/' + clienteId);
+    getClienteById(clienteId) {
+        return axios.get(CLIENTE_BASE_REST_API_URL + "/clientes/" + clienteId);
     }
 
-    updateCliente(clienteId, cliente){
-        return axios.put(CLIENTE_BASE_REST_API_URL + '/' + clienteId, cliente);
+    updateCliente(clienteId, cliente) {
+        return axios.put(CLIENTE_BASE_REST_API_URL + "/clientes/" + clienteId, cliente);
     }
 
-    deleteCliente(clienteId){
-        return axios.delete(CLIENTE_BASE_REST_API_URL + '/' + clienteId);
+    deleteCliente(clienteId) {
+        return axios.delete(CLIENTE_BASE_REST_API_URL + "/clientes/" + clienteId);
     }
 }
 

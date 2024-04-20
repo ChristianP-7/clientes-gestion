@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@CrossOrigin(origins = "clientes-gestion-8w3l9v6b4-christian-perezs-projects-f5e0eacb.vercel.app")
+@CrossOrigin(origins = "https://clientes-gestion.vercel.app/")
 @RestController
 @RequestMapping("/api/v1")
 public class ClienteController {
