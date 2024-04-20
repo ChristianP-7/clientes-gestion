@@ -1,7 +1,6 @@
 import axios from "axios";
-import viteConfig from "../../vite.config";
 
-const CLIENTE_BASE_REST_API_URL = import.meta.env.VITE_API_URL;
+const CLIENTE_BASE_REST_API_URL = "https://clientes-gestion.onrender.com/api/v1/clientes";
 
 class ClienteService{
 
@@ -10,7 +9,7 @@ class ClienteService{
     }
 
     createCliente(cliente){
-        return axios.post(CLIENTE_BASE_REST_API_URL,cliente);
+        return axios.post(CLIENTE_BASE_REST_API_URL, cliente);
     }
 
     getClienteById(clienteId){
@@ -18,11 +17,11 @@ class ClienteService{
     }
 
     updateCliente(clienteId, cliente){
-        return axios.put(CLIENTE_BASE_REST_API_URL + '/' + clienteId,cliente);
+        return axios.put(CLIENTE_BASE_REST_API_URL + '/' + clienteId, cliente);
     }
 
     deleteCliente(clienteId){
-        return axios.delete(CLIENTE_BASE_REST_API_URL + '/' + clienteId); 
+        return axios.delete(CLIENTE_BASE_REST_API_URL + '/' + clienteId);
     }
 }
 
