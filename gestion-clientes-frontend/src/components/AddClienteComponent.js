@@ -23,7 +23,7 @@ export const AddClienteComponent = () => {
             })
         }
         else{
-            ClienteService.createCliente(id,cliente).then((response) => {
+            ClienteService.createCliente(cliente).then((response) => {
                 console.log(response.data);
                 navigate('/clientes');
             }).catch(error => {
